@@ -13,6 +13,23 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+die_one = rand(1..6)
+puts die_one
+
+die_two = rand(1..6)
+puts die_two
+
+total = die_one + die_two
+
+if total == 7 || total == 11
+    puts "YOU WIN!" 
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else 
+    puts "THE POINT IS #{total}"
+end 
+
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
