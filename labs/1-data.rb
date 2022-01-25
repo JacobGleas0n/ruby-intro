@@ -10,6 +10,19 @@
 # then write them out to the screen. Show the total
 # as well.
 
+# set the first die
+roll_one = rand(1..6)
+puts roll_one
+
+#set the second die
+roll_two = rand(1..6)
+puts roll_two
+
+#sum the total die
+total_roll = roll_one + roll_two 
+puts "The total is: #{total_roll}"
+
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
