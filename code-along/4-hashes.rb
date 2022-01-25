@@ -4,6 +4,35 @@
 
 # Hashes are lists of *key-value pairs*
 
+profile = {
+    name: "Brian",
+    location: {
+        city: "Chicago",
+        state: "IL"
+    } ,
+    status: "Teaching ENTR-451!",
+    timeline: [
+        {status:"Teaching this class", posted: "8:30am"},
+        {status: "Eating tacos", posted:"7am"}
+    ]
+}
+
+puts profile[:name]
+puts profile[:status]
+
+# Can do this one two lines of code
+#location = profile[:location]
+#puts location[:city]
+
+#Or with one line of code 
+puts profile[:location][:city]
+
+# :name = symbol
+# =>"variable" = hash rocket
+
 # Accessing data from the hash
+puts "Latest status"
+puts "_____________"
+puts profile[:timeline][0][:status]
 
 # More Complex Hashes

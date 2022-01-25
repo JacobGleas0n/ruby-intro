@@ -57,7 +57,7 @@ your_team_score = 2
 other_team_score = 2
 if your_team_score > other_team_score
     puts "you won!"
-elsif your_team_score = other_team_score
+elsif your_team_score == other_team_score
     puts "it was a tie"
 else 
     puts "sorry, you lost:("

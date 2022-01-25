@@ -2,8 +2,20 @@
 # is the same as where this file is located and then run:
 # ruby 5-loops.rb
 
-things_that_would_be_better_with_bacon = ["tacos", "cheeseburgers", "donuts"]
+things_that_would_be_better_with_bacon = ["tacos", "cheeseburgers", "donuts", "unicorns"]
 
 # The Old Way
 
+puts "bacon #{things_that_would_be_better_with_bacon[0]}"
+puts "bacon #{things_that_would_be_better_with_bacon[1]}"
+puts "bacon #{things_that_would_be_better_with_bacon[2]}"
+puts "bacon #{things_that_would_be_better_with_bacon[3]}"
+
 # The New Way
+
+for food in things_that_would_be_better_with_bacon
+    # 1st time ... thing == "tacos"
+    # 2nd time ... thing == "cheeseburgers"
+    # use the value that you plan to iterate through! We assigned the variable (food)
+    puts "bacon #{food}"
+end  
